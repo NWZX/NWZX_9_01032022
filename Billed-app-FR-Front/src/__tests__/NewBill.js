@@ -139,7 +139,7 @@ describe("Given I am connected as an employee", () => {
 // test d'intégration POST
 describe("Given I am connected as an employee", () => {
   describe("When I am on NewBills Page", () => {
-    test("post bills from mock POST GET", async () => {
+    test("post bills from mock API POST", async () => {
       const store = mockStore;
       const formData = new FormData();
       formData.append('file', new File(["blobdata"], "test.pdf", { type: "application/png" }));
